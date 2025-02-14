@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Practical Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cypress Testing Playground!</h1>
+        <p>This website is designed to test all Cypress concepts.</p>
+    </header>
+
+    <main>
+        <!-- Login Form -->
+        <section class="form-container">
+            <h2>Login Form</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" data-cy="username-input">
+                <input type="password" id="password" placeholder="Password" data-cy="password-input">
+                <button type="submit" data-cy="submit-button">Login</button>
+            </form>
+            <div id="success-message" style="display: none;">Login Successful! ✅</div>
+        </section>
+
+        <!-- Dropdown and Checkbox -->
+        <section class="interactions">
+            <h2>Dropdown and Checkbox</h2>
+            <select id="dropdown" data-cy="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+            <div id="dropdown-message" style="display: none;"></div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree" data-cy="agree-checkbox">
+                <label for="agree">I agree to the terms</label>
+            </div>
+            <div id="checkbox-message" style="display: none;"></div>
+        </section>
+
+        <!-- Double Click and Right Click -->
+        <section class="click-interactions">
+            <h2>Double Click and Right Click</h2>
+            <div id="double-click-area" data-cy="double-click-area">Double Click Me!</div>
+            <div id="right-click-area" data-cy="right-click-area">Right Click Me!</div>
+        </section>
+
+        <!-- Drag and Drop -->
+        <section class="drag-drop">
+            <h2>Drag and Drop</h2>
+            <div id="drag-item" draggable="true" data-cy="drag-item">Drag Me</div>
+            <div id="drop-zone" data-cy="drop-zone">Drop Here</div>
+        </section>
+
+        <!-- Scroll Interaction -->
+        <section class="scroll-section">
+            <h2>Scroll Interaction</h2>
+            <div id="scroll-container" style="height: 200px; overflow: scroll;">
+                <div style="height: 1000px;">Scroll down to see more content!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Cypress Testing Playground</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+h2 {
+  color: #6200ea;
+  margin-top: 0;
+}
+
+/* Form Styles */
+.form-container input,
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #3700b3;
+}
+
+/* Dropdown and Checkbox Styles */
+.interactions select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.interactions #dropdown-message,
+.interactions #checkbox-message {
+  margin-top: 10px;
+  color: #6200ea;
+  font-weight: bold;
+}
+
+.checkbox-container {
+  margin: 10px 0;
+}
+
+/* Click Interactions */
+.click-interactions #double-click-area,
+.click-interactions #right-click-area {
+  background-color: #03dac6;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.click-interactions #double-click-area:hover,
+.click-interactions #right-click-area:hover {
+  background-color: #018786;
+}
+
+/* Drag and Drop */
+.drag-drop #drag-item {
+  background-color: #bb86fc;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: grab;
+}
+
+.drag-drop #drop-zone {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Scroll Section */
+.scroll-section #scroll-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
