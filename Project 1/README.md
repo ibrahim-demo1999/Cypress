@@ -1,79 +1,81 @@
+# 🧪 Cypress Test Cases
+
 ## **Test 1: Login Validation 🔐**
 
-### Goal: Ensure users can't log in with invalid credentials
+**Goal:** Ensure users cannot log in with invalid credentials.
 
-- **Test 1.1:**  
-  ❌ _Can't log in with username only_
+### ❌ Test 1.1: Cannot log in with username only
 
-  - What we do: Type "bash" in the username field and click "Login".
-  - What we check: The success message stays hidden.
+- **Action:** Type `"bash"` in the username field and click **Login**.
+- **Expected Result:** The success message remains **hidden**.
 
-- **Test 1.2:**  
-  ❌ _Can't log in with password only_
+### ❌ Test 1.2: Cannot log in with password only
 
-  - What we do: Type "password123" in the password field and click "Login".
-  - What we check: The success message stays hidden.
+- **Action:** Type `"password123"` in the password field and click **Login**.
+- **Expected Result:** The success message remains **hidden**.
 
-- **Test 1.3:**  
-  ❌ _Username must start and end with #_
-  - What we do: Type "bash" (without #) and a password, then click "Login".
-  - What we check: The success message stays hidden.
+### ❌ Test 1.3: Username must start and end with `#`
+
+- **Action:** Type `"bash"` (without `#`) and a password, then click **Login**.
+- **Expected Result:** The success message remains **hidden**.
 
 ---
 
 ## **Test 2: Dropdown Selection 📋**
 
-### Goal: Check if dropdown shows correct messages
+**Goal:** Ensure the dropdown displays the correct message based on selection.
 
-- **Test 2.1:**  
-  ✅ _Select "Option 1"_
+### ✅ Test 2.1: Select "Option 1"
 
-  - What we do: Choose "Option 1" from the dropdown.
-  - What we check: A message appears saying "You selected: option1".
+- **Action:** Choose `"Option 1"` from the dropdown.
+- **Expected Result:** A message appears:  
+  📝 `"You selected: option1"`.
 
-- **Test 2.2:**  
-  ✅ _Select "Option 2"_
-  - What we do: Choose "Option 2" from the dropdown.
-  - What we check: A message appears saying "You selected: option2".
+### ✅ Test 2.2: Select "Option 2"
+
+- **Action:** Choose `"Option 2"` from the dropdown.
+- **Expected Result:** A message appears:  
+  📝 `"You selected: option2"`.
 
 ---
 
 ## **Test 3: Checkbox Interaction ✔️**
 
-### Goal: Test checkbox messages
+**Goal:** Verify checkbox functionality and displayed messages.
 
-- **Test 3:**  
-  ✅ _Check and uncheck the box_
-  - What we do:
-    1. Check the "I agree to the terms" box.
-    2. Uncheck the box.
-  - What we check:
-    - When checked: Message says "You agreed to the terms!"
-    - When unchecked: Message says "You disagreed with the terms."
+### ✅ Test 3: Check and Uncheck the Box
+
+- **Actions:**
+  1. Check the `"I agree to the terms"` box.
+  2. Uncheck the box.
+- **Expected Results:**
+  - ✅ When **checked** → `"You agreed to the terms!"`
+  - ❌ When **unchecked** → `"You disagreed with the terms."`
 
 ---
 
-## **Test 4: Interactions 🖱️**
+## **Test 4: User Interactions 🖱️**
 
-### Goal: Test user actions
+**Goal:** Test different user interactions.
 
-- **Test 4.1:**  
-  ✅ _Double-click_
+### ✅ Test 4.1: Double-click
 
-  - What we do: Double-click the "Double Click Me!" area.
+- **Action:** Double-click the `"Double Click Me!"` area.
+- **Expected Result:** Action is triggered.
 
-- **Test 4.2:**  
-  ✅ _Right-click_
+### ✅ Test 4.2: Right-click
 
-  - What we do: Right-click the "Right Click Me!" area.
+- **Action:** Right-click the `"Right Click Me!"` area.
+- **Expected Result:** Context menu appears or relevant action is triggered.
 
-- **Test 4.3:**  
-  ✅ _Drag-and-drop_
+### ✅ Test 4.3: Drag-and-Drop
 
-  - What we do: Drag the "Drag Me" item to the "Drop Here" zone.
+- **Action:** Drag the `"Drag Me"` item to the `"Drop Here"` zone.
+- **Expected Result:** Item is successfully dropped.
 
-- **Test 4.4:**  
-  ✅ _Scrolling_
-  - What we do: Scroll to the bottom of the scrollable box.
+### ✅ Test 4.4: Scrolling
+
+- **Action:** Scroll to the **bottom** of the scrollable box.
+- **Expected Result:** The box scrolls without issues.
 
 ---
